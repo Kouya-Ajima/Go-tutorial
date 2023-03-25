@@ -17,6 +17,7 @@ func main() {
 	fmt.Println(*p)
 
 	p = &j
+	// ポインターは格納場所のメモリを返す
 	fmt.Println(p)
 	fmt.Println(*p)
 
