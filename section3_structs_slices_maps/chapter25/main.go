@@ -21,7 +21,7 @@ func main() {
 	pos, neg := adder(), adder()
 
 	// ここには関数が格納されているだけ
-	fmt.Println(pos)
+	// fmt.Println(pos)
 	// 元の変数に加算される
 	fmt.Println(pos(10))
 
