@@ -1,9 +1,17 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+type I interface {
+	M()
+}
 
 func main() {
-	fmt.Println()
+	var i I
+	describe(i)
+	i.M()
+}
+
+func describe(i I) {
+	fmt.Printf("(%v, %T)\n", i, i)
 }
